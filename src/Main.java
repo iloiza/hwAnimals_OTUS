@@ -59,7 +59,7 @@ public class Main {
         do{
             System.out.println("Введите возраст животного от 1 до 30");
             ageStr = scanner.next();
-            if (ageStr.matches("[+-]?\\d+")) {
+            if (ageStr.matches("[+-]?\\d+") && ageStr.length() <= 2) {
                 if (Integer.parseInt(ageStr) > 0 && Integer.parseInt(ageStr) < 31) break;
             }
         } while (true);
